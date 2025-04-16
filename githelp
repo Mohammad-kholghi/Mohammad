@@ -1,5 +1,53 @@
 
 
+# commit:
+``` git commit -m "message" ```
+
+# branching:
+``` git branch newBranch ```
+
+# checkout:
+``` git checkout branch```
+
+# branch and checkout:
+``` git checkout -b newBranchToCheckOut ```
+
+# merge:
+``` git merge otherBranch ```
+
+# rebase: to copy a branch to another branch
+``` git rebase otherBranch ```
+
+# detach head: (note that head and branch point at one place, but not connected)
+``` # HEAD -> main -> commitName ```
+``` git checkout commitName # also branchName ``` 
+``` HEAD -> commitName ```
+``` main -> commitName ```
+
+# relative references:
+### 1:
+``` # use git log to find the hash of a commit, then: ```
+``` git checkout main^^ # grandparent of main ```
+``` git checkout HEAD^ # parent of HEAD ```
+### 2:
+``` git checkout HEAD~2 # grandparent of HEAD ```
+
+# move branch to another commit: (like git checkout for HEAD)
+``` git branch -f main HEAD~3 # HEAD remains where it is```
+
+
+# reset: moves branch and HEAD together
+``` git reset HEAD~1 ```
+
+# revert:
+``` git revert HEAD ```
+
+# cherry-pick: to copy a commit to current branch
+
+
+
+
+
 echo to remove files from a commit:
 echo \> git rm --cached /path/to/file, dir OR regular-expression
 
