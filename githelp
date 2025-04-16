@@ -1,0 +1,19 @@
+
+
+echo to remove files from a commit:
+echo \> git rm --cached /path/to/file, dir OR regular-expression
+
+echo
+echo
+
+echo to remove files from staging area \(File becomes untrackted. Data won\'t change after the last edit\):
+echo \> git reset HEAD -- file, folder
+
+echo
+echo
+
+echo create a new branch and switch to it \(1\):
+echo \> git checkout -b new
+echo create a new branch and switch to it \(2\):
+echo \> git branch new
+echo \> git checkout new
