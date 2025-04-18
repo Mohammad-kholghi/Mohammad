@@ -43,6 +43,16 @@
 ``` git revert HEAD ```
 
 # cherry-pick: to copy a commit to current branch
+git cherry-pick C1 C2 C3
+
+# rebase -i:
+# before: C1, C2, C3, C4, C5, C6, C7 (HEAD)
+git rebase -i HEAD~4
+# change the order of the last 4 commits (or deselct them):
+# on edit: xC5x, C7, C6, C4 (HEAD)
+# and then:
+# after: C1, C2, C3, C4, C5, C6, C7 (HEAD)
+#                    C7, C6, C4 (HEAD)
 
 
 
